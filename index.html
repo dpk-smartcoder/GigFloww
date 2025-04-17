@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GigFloww - Landing Page</title>
+  <style>
+    /* Enhanced CSS Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      text-align: center;
+      background: linear-gradient(135deg, #4CAF50, #45a049);
+      color: white;
+      padding: 3rem 1rem;
+      animation: slideIn 1s ease-out;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .about, .features, .call-to-action {
+      padding: 2rem 1rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .about:hover, .features:hover, .call-to-action:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .about h2, .features h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .feature-block {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .feature-block:hover {
+      background-color: #f1f8f4;
+    }
+
+    .feature-block h3 {
+      color: #4CAF50;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-button {
+      display: block;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #f1f1f1;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Keyframe Animations */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Your Creative Gig Journey Starts Here</h1>
+    <p>Join the community where creativity meets opportunity.</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About GigFloww</h2>
+      <p>GigFloww is a platform designed to connect creative minds with exciting gigs and projects. Empower your journey, discover your potential.</p>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature-block">
+        <h3>Easy Sign-Up</h3>
+        <p>Join effortlessly and start exploring creative opportunities right away.</p>
+      </div>
+      <div class="feature-block">
+        <h3>Tailored Gigs</h3>
+        <p>Find projects that align perfectly with your skills and interests.</p>
+      </div>
+      <div class="feature-block">
+        <h3>Community Support</h3>
+        <p>Collaborate with a vibrant community and achieve more together.</p>
+      </div>
+      <div class="feature-block">
+        <h3>Secure Payments</h3>
+        <p>Get paid securely and on time for all your creative endeavors.</p>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <button class="cta-button" onclick="joinNow()">Join Now</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 GigFloww. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript Functionality
+    function joinNow() {
+      // Redirect to a sign-up page (replace with your actual URL)
+      window.location.href = 'signup.html';
+    }
+  </script>
+</body>
+</html>
